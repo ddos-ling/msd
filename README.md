@@ -1,4 +1,4 @@
-# MinecraftServer download
+# MinecraftServer Download
 
 #### 介绍
 本仓库用于提供MinecraftServer下载服务
