@@ -45,6 +45,14 @@ echo "5. Download startup script"
 echo ""
 wget -O /home/server/1.15.2/startPaper.sh https://ddos_ling.gitee.io/minecraftserver-download/1.15.2/startPaper.sh
 echo ""
+echo "6. 下载 cache"
+echo "6. Download cache"
+echo ""
+mkdir -p /home/server/1.15.2/cache/
+wget -O /home/server/1.15.2/cache/mojang_1.15.2.jar https://ddos_ling.gitee.io/minecraftserver-download/1.15.2/cache/mojang_1.15.2.jar
+wget -O /home/server/1.15.2/cache/patched_1.15.2.jar https://ddos_ling.gitee.io/minecraftserver-download/1.15.2/cache/patched_1.15.2.jar
+
+echo ""
 echo "-----------------------------------------------------------------------------------------------------"
 echo "安装完成"
 echo "Installation is complete"
