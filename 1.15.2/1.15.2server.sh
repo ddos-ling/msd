@@ -33,17 +33,17 @@ echo ""
 echo "3. 下载 Minecraft 1.15.2 server"
 echo "3. Download Minecraft 1.15.2 server"
 echo ""
-wget -O /home/server/1.15.2/1.15.2server.jar http://10.4.0.2:5567/MinecraftServer-download/1.15.2/1.15.2server.jar
+wget -O /home/server/1.15.2/1.15.2server.jar https://ddos_ling.gitee.io/minecraftserver-download/1.15.2/1.15.2server.jar
 echo ""
 echo "4. 设置开服许可"
 echo "4. Set up service permission"
 echo ""
-wget -O /home/server/1.15.2/eula.txt http://10.4.0.2:5567/MinecraftServer-download/1.15.2/eula.txt
+wget -O /home/server/1.15.2/eula.txt https://ddos_ling.gitee.io/minecraftserver-download/1.15.2/eula.txt
 echo ""
 echo "5. 下载启动脚本"
 echo "5. Download startup script"
 echo ""
-wget -O /home/server/1.15.2/start.sh http://10.4.0.2:5567/MinecraftServer-download/1.15.2/start.sh
+wget -O /home/server/1.15.2/start.sh https://ddos_ling.gitee.io/minecraftserver-download/1.15.2/start.sh
 echo ""
 echo "-----------------------------------------------------------------------------------------------------"
 echo "安装完成"
