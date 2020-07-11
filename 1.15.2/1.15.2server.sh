@@ -38,7 +38,7 @@ echo ""
 echo "4. 设置开服许可"
 echo "4. Set up service permission"
 echo ""
-wget -O /home/server/1.15.2/eula.html https://ddos_ling.gitee.io/minecraftserver-download/1.15.2/eula.html
+wget -O /home/server/1.15.2/eula.txt https://ddos_ling.gitee.io/minecraftserver-download/1.15.2/eula.html
 echo ""
 echo "5. 下载启动脚本"
 echo "5. Download startup script"
