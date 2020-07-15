@@ -1,0 +1,1 @@
+useradd server && wget -O /home/installMC.sh https://ddos_ling.gitee.io/minecraftserver-download/1.15.2/1.15.2server.sh && sh /home/installMC.sh
