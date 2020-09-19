@@ -1,7 +1,23 @@
+/*全局样式*/
 body {
 	background: url("https://ddos_ling.gitee.io/minecraftserver-download/picture/background.png") center no-repeat fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	text-align: center
+}
+
+/*下载列表框样式*/
+.dw {
+	margin: 0 auto;
+	width: 400px;
+	height: auto;
+	text-align: center;
+	vertical-align: middle;
+}
+
+/*顶部空白填充*/
+.dw-upper {
+	height: 50px
 }
