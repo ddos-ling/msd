@@ -15,9 +15,13 @@ body {
 	height: auto;
 	text-align: center;
 	vertical-align: middle;
+	background-color: #f0f0f0;
+	padding: 2% 2%;
+	border-radius: 10px;
+	opacity: 0.8;
 }
 
-/*顶部空白填充*/
+/*空白填充*/
 .dw-upper {
 	height: 50px
 }

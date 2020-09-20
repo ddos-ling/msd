@@ -12,23 +12,26 @@
 		<link type="text/css" rel="styleSheet" href="./css/dw_style.css" />
 
 		<!--引入MDUI-->
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/css/mdui.min.css" integrity="sha384-2PJ2u4NYg6jCNNpv3i1hK9AoAqODy6CdiC+gYiL2DVx+ku5wzJMFNdE3RoWfBIRP" crossorigin="anonymous" />
-		<script src="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/js/mdui.min.js" integrity="sha384-aB8rnkAu/GBsQ1q6dwTySnlrrbhqDwrDnpVHR2Wgm8pWLbwUnzDcIROX3VvCbaK+" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/css/mdui.min.css" integrity="sha384-2PJ2u4NYg6jCNNpv3i1hK9AoAqODy6CdiC+gYiL2DVx+ku5wzJMFNdE3RoWfBIRP"
+		 crossorigin="anonymous" />
+		<script src="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/js/mdui.min.js" integrity="sha384-aB8rnkAu/GBsQ1q6dwTySnlrrbhqDwrDnpVHR2Wgm8pWLbwUnzDcIROX3VvCbaK+"
+		 crossorigin="anonymous"></script>
 	</head>
 	<body>
 		<!--顶部空白填充-->
 		<div class="dw-upper"></div>
-		
+
 		<!--界面动效(弃用)
 		<script src="./js/canvas-nest.min.js"></script>-->
-		
+
 		<!--msd文字-->
 		<div class="content" style="height: auto; width: auto; text-align: center; vertical-align:middle;">
 			<img id="image" style="max-width: 100%; max-height:100%;" src="https://ddos_ling.gitee.io/minecraftserver-download/msd.png" />
 		</div>
-		
+
 		<!--标题-->
-		<p style="width: 100%;text-align: center;font-size: 30px;color:#000000;">我的世界服务端下载站</p>
+		<!--<p style="width: 100%;text-align: center;font-size: 30px;color:#000000;">我的世界服务端下载站</p>-->
+		<div class="dw-upper"></div>
 		
 		<!--列表-->
 		<div class="dw">
@@ -41,10 +44,10 @@
 					</div>
 					<ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
 						<a href="https://storage-space-1.gitee.io/minecraftserver/1.16.1/1.16.1server.jar" download="1.16.1server.jar"
-						 class="mdui-list-item mdui-ripple">1.16.1 原版服务端</a>
+						 class="mdui-list-item mdui-ripple" id="dwan">1.16.1 原版服务端</a>
 						<a href="https://storage-space-1.gitee.io/minecraftserver/1.16.1/1.16.1paper.jar" download="1.16.1paper.jar"
 						 class="mdui-list-item mdui-ripple">1.16.1 Paper插件服务端</a>
-						<a href="https://storage-space-1.gitee.io/minecraftserver/1.16.1/1.16.1spigot.jar" download="1.16.1spigot.jar"
+						<a onclick="" href="https://storage-space-1.gitee.io/minecraftserver/1.16.1/1.16.1spigot.jar" download="1.16.1spigot.jar"
 						 class="mdui-list-item mdui-ripple">1.16.1 Spigot插件服务端</a>
 					</ul>
 				</li>
@@ -100,7 +103,11 @@
 				</li>
 
 			</ul>
+
 		</div>
+		
+		<!--分隔-->
+		<div class="dw-upper"></div>
 		
 		<!--IP地址信息-->
 		<script src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
@@ -108,9 +115,9 @@
 			document.write("<p style='width: 100%;text-align: center;font-size: 15px;color:#C0C0C0;'>Your IP:" + returnCitySN[
 				"cip"] + "&nbsp&nbsp&nbspIP location:" + returnCitySN["cname"])
 		</script>
-		
+
 		<!--底部信息-->
 		<p style="width: 100%;text-align: center;font-size: 15px;color:#C0C0C0;">Service provided by DDoS_LING</p>
-		<p style="width: 100%;text-align: center;font-size: 15px;color:#C0C0C0;">Last update: September 20, 2020</p>
+		<p style="width: 100%;text-align: center;font-size: 15px;color:#C0C0C0;">Last update: September 20, 2020 Edition: 2020092002</p>
 	</body>
 </html>
