@@ -10,6 +10,7 @@
 
 		<!--引入dw样式-->
 		<link type="text/css" rel="styleSheet" href="./css/dw_style.css" />
+		<script src="./js/msgbox.js"></script>
 
 		<!--引入MDUI-->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/css/mdui.min.css" integrity="sha384-2PJ2u4NYg6jCNNpv3i1hK9AoAqODy6CdiC+gYiL2DVx+ku5wzJMFNdE3RoWfBIRP"
@@ -17,7 +18,7 @@
 		<script src="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/js/mdui.min.js" integrity="sha384-aB8rnkAu/GBsQ1q6dwTySnlrrbhqDwrDnpVHR2Wgm8pWLbwUnzDcIROX3VvCbaK+"
 		 crossorigin="anonymous"></script>
 	</head>
-	<body>
+	<body class="mdui-theme-primary-indigo mdui-theme-accent-pink mdui-theme-layout-auto">
 		<!--顶部空白填充-->
 		<div class="dw-upper"></div>
 
@@ -34,7 +35,7 @@
 		<div class="dw-upper"></div>
 
 		<!--列表-->
-		<div class="dw">
+		<div class="dw mdui-theme-layout-auto">
 			<ul class="mdui-list" mdui-collapse="{accordion: true}">
 				<li class="mdui-collapse-item">
 					<div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
@@ -99,13 +100,22 @@
 
 				<li class="mdui-list-item mdui-ripple">
 					<i class="mdui-icon material-icons">cloud</i>
-					<a href="https://www.natfrp.com/" class="mdui-list-item-content">SAKURA FRP 免费内网穿透服务平台</a>
+					<a class="mdui-list-item-content" mdui-dialog="{target: '#sfrp'}">SAKURA FRP 免费内网穿透服务平台</a>
 				</li>
 
 			</ul>
 
 		</div>
-
+		
+		<div class="mdui-dialog mdui-container" id="sfrp">
+		    <div class="mdui-dialog-title">SFrp+</div>
+		    <div class="mdui-dialog-content">SFrp+是基于SAKURA FRP的映射客户端，比官方提供的更加稳定，可否尝试一下呢？</div>
+		    <div class="mdui-dialog-actions">
+		      <button class="mdui-btn mdui-ripple" onclick = "window.location.href = 'https://www.natfrp.com/'">不了，谢谢</button>
+		      <button class="mdui-btn mdui-ripple" onclick = "window.location.href = 'https://ddos_ling.gitee.io/sfrp/'">尝试一下</button>
+		    </div>
+		</div>
+		
 		<!--分隔-->
 		<div class="dw-upper"></div>
 
@@ -119,5 +129,6 @@
 		<!--底部信息-->
 		<p style="width: 100%;text-align: center;font-size: 15px;color:#C0C0C0;">Service provided by DDoS_LING</p>
 		<p style="width: 100%;text-align: center;font-size: 15px;color:#C0C0C0;">Last update: September 26, 2020 Edition: 2020092601</p>
+		
 	</body>
 </html>
