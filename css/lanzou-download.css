@@ -1,0 +1,12 @@
+/*iframe样式*/
+.dw-iframe {
+	width: 600px;
+	height: 400px
+}
+
+/*隐藏其他元素*/
+.n_hd {
+	width: 0px;
+	height: 0px;
+	opacity:0
+}
