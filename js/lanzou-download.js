@@ -5,4 +5,4 @@ function GetQueryString(name){
 };
 
 var id=GetQueryString("id");
-document.getElementById("download").src='https://stgzs.lanzous.com/'+id
+document.getElementById("download").src='https://stgzs.lanzoui.com/'+id
