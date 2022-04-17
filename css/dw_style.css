@@ -1,6 +1,6 @@
 /*全局样式*/
 body {
-	background: url("https://ddos_ling.gitee.io/minecraftserver-download/picture/background.png") center no-repeat fixed;
+	background: url("./picture/background.png") center no-repeat fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
