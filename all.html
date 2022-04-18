@@ -77,8 +77,10 @@
 					<i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
 				</div>
 				<ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
-					<a href="https://papermc.io/downloads" target=_blank class="mdui-list-item mdui-ripple">Paper 1.18.2 最新构建下载</a>
-					<div id="paper"><a class="mdui-list-item mdui-ripple" mdui-dialog="{target: '#paper-w'}">-- 点击列出Paper旧版本 --</a></div>
+					<a href="https://papermc.io/downloads" target=_blank class="mdui-list-item mdui-ripple">Paper 1.18.2
+						最新构建下载</a>
+					<div id="paper"><a class="mdui-list-item mdui-ripple" mdui-dialog="{target: '#paper-w'}">--
+							点击列出Paper旧版本 --</a></div>
 				</ul>
 
 			</li>
@@ -109,7 +111,7 @@
 			</li>
 			<li class="mdui-list-item mdui-ripple">
 				<i class="mdui-icon material-icons">keyboard_backspace</i>
-				<a href="./" class="mdui-list-item-content">返回</a>
+				<a id="back" href="./" class="mdui-list-item-content">返回</a>
 			</li>
 		</ul>
 
@@ -125,8 +127,12 @@
 	<!-- 引入Download JavaScript -->
 	<script src="./js/download.js"></script>
 
+	<script type="text/javascript">
+		
+	</script>
+
 	<!-- Paper 旧版本警告 -->
-	<div class="mdui-dialog" id="paper-w" >
+	<div class="mdui-dialog" id="paper-w">
 		<div class="mdui-dialog-title">Legacy Downloads (旧版下载)</div>
 		<div class="mdui-dialog-content">
 			These are here purely for informational reasons.<br>
@@ -142,7 +148,8 @@
 		</div>
 		<div class="mdui-dialog-actions">
 			<button class="mdui-btn mdui-ripple" mdui-dialog-close>取消</button>
-			<button class="mdui-btn mdui-ripple" mdui-dialog-confirm onclick='$("#paper").load("./"+dw_service+"/paper.html")'>我已了解，并继续下载</button>
+			<button class="mdui-btn mdui-ripple" mdui-dialog-confirm
+				onclick='$("#paper").load("./"+dw_service+"/paper.html")'>我已了解，并继续下载</button>
 		</div>
 	</div>
 </body>
