@@ -1,141 +1,142 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>MinecraftServer Download: 我的世界服务器高速下载站</title>
-		<link rel="shortcut icon" href="./logo.ico">
-		<meta http-equiv="Pragma" content="no-cache">
-		<meta http-equiv="Cache-Control" content="no-cache">
-		<meta http-equiv="Expires" content="0">
-		
-		<!--SEO-->
-		<meta name="keywords" content="我的世界服务器,我的世界服务器下载,mc服务器下载,Minecraft服务器下载,MinecraftServer下载,MinecraftServer Download" />
-		<meta name="description" content="MinecraftServer Download: 我的世界服务器高速下载站" />
-		
-		<!--引入dw样式-->
-		<link type="text/css" rel="styleSheet" href="./css/dw_style.css" />
 
-		<!--引入MDUI-->
-		<!-- MDUI CSS for cdn.ddos-ling.top -->
-		<link rel="stylesheet" href="https://cdn.ddos-ling.top/mdui/css/mdui.min.css"/>
+<head>
+	<meta charset="utf-8">
+	<title>MinecraftServer Download: 我的世界服务器高速下载站</title>
+	<link rel="shortcut icon" href="./logo.ico">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Expires" content="0">
 
-		<!-- MDUI JavaScript for cdn.ddos-ling.top -->
-		<script src="https://cdn.ddos-ling.top/mdui/js/mdui.min.js"></script>
-		 
-		<!-- 适应手机屏幕 -->
-		<meta name="viewport"
-			content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
-	</head>
-	<body class="mdui-theme-primary-indigo mdui-theme-accent-pink mdui-theme-layout-auto">
-		<!--顶部空白填充-->
-		<div class="dw-upper"></div>
+	<!--SEO-->
+	<meta name="keywords"
+		content="我的世界服务器,我的世界服务器下载,mc服务器下载,Minecraft服务器下载,MinecraftServer下载,MinecraftServer Download" />
+	<meta name="description" content="MinecraftServer Download: 我的世界服务器高速下载站" />
 
-		<!--界面动效(弃用)
+	<!--引入dw样式-->
+	<link type="text/css" rel="styleSheet" href="./css/dw_style.css" />
+
+	<!--引入MDUI-->
+	<!-- MDUI CSS for cdn.ddos-ling.top -->
+	<link rel="stylesheet" href="https://cdn.ddos-ling.top/mdui/css/mdui.min.css" />
+
+	<!-- MDUI JavaScript for cdn.ddos-ling.top -->
+	<script src="https://cdn.ddos-ling.top/mdui/js/mdui.min.js"></script>
+
+	<!-- jquery-viewer JavaScript for cdn.ddos-ling.top -->
+	<script src="https://cdn.ddos-ling.top/jquery-3.4.1/dist/jquery.min.js"></script>
+
+	<!-- 适应手机屏幕 -->
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+</head>
+
+<body class="mdui-theme-primary-indigo mdui-theme-accent-pink mdui-theme-layout-auto">
+	<!--顶部空白填充-->
+	<div class="dw-upper"></div>
+
+	<!--界面动效(弃用)
 		<script src="./js/canvas-nest.min.js"></script>-->
 
-		<!--msd文字-->
-		<div class="content" style="height: auto; width: auto; text-align: center; vertical-align:middle;">
-			<img id="image" style="max-width: 100%; max-height:100%;" src="./msd.png" />
-		</div>
+	<!--msd文字-->
+	<div class="content" style="height: auto; width: auto; text-align: center; vertical-align:middle;">
+		<img id="image" style="max-width: 100%; max-height:100%;" src="./msd.png" />
+	</div>
 
-		<!--标题-->
-		<!--<p style="width: 100%;text-align: center;font-size: 30px;color:#000000;">我的世界服务端下载站</p>-->
-		<div class="dw-upper"></div>
+	<!--标题-->
+	<!--<p style="width: 100%;text-align: center;font-size: 30px;color:#000000;">我的世界服务端下载站</p>-->
+	<div class="dw-upper"></div>
 
-		<!--列表-->
-		<div class="dw mdui-theme-layout-auto mdui-shadow-24">
-			<ul class="mdui-list" mdui-collapse="{accordion: true}">
-				<li class="mdui-collapse-item">
-					<div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
-						<i class="mdui-icon material-icons">file_download</i>
-						<div class="mdui-list-item-content">下载 1.16.3 服务器</div>
-						<i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
-					</div>
-					<ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
-						<a href="https://storage-space-1.gitee.io/minecraftserver/1.16.3/1.16.3server.jar" download="1.16.3server.jar"
-						 class="mdui-list-item mdui-ripple" id="dwan">1.16.3 原版服务端</a>
-						<a href="https://storage-space-1.gitee.io/minecraftserver/1.16.3/1.16.3paper.jar" download="1.16.3paper.jar"
-						 class="mdui-list-item mdui-ripple">1.16.3 Paper 插件服务端</a>
-						<a href="https://storage-space-1.gitee.io/minecraftserver/1.16.3/1.16.3spigot.jar" download="1.16.3spigot.jar"
-						 class="mdui-list-item mdui-ripple">1.16.3 Spigot 插件服务端</a>
-						<a href="https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.16.3.jar" download="1.16.3craftbukkit.jar" class="mdui-list-item mdui-ripple">1.16.3
-							CraftBukkit 插件服务端(官方)</a>
-					</ul>
-				</li>
-
-				<li class="mdui-collapse-item">
-					<div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
-						<i class="mdui-icon material-icons">file_download</i>
-						<div class="mdui-list-item-content">下载 1.15.2 服务器</div>
-						<i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
-					</div>
-					<ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
-						<a href="https://storage-space-1.gitee.io/minecraftserver/1.15.2/1.15.2server.jar" download="1.15.2server.jar"
-						 class="mdui-list-item mdui-ripple">1.15.2 原版服务端</a>
-						<a href="https://storage-space-1.gitee.io/minecraftserver/1.15.2/1.15.2paper.jar" download="1.15.2paper.jar"
-						 class="mdui-list-item mdui-ripple">1.15.2 Paper 插件服务端</a>
-						<a href="https://storage-space-1.gitee.io/minecraftserver/1.15.2/1.15.2spigot.jar" download="1.15.2spigot.jar"
-						 class="mdui-list-item mdui-ripple">1.15.2 Spigot 插件服务端</a>
-						<a href="https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.15.2.jar" download="1.15.2craftbukkit.jar" class="mdui-list-item mdui-ripple">1.15.2
-							CraftBukkit 插件服务端(官方)</a>
-					</ul>
-				</li>
-
-				<li class="mdui-collapse-item">
-					<div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
-						<i class="mdui-icon material-icons">file_download</i>
-						<div class="mdui-list-item-content">下载 1.12.2 服务器</div>
-						<i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
-					</div>
-					<ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
-						<a href="https://storage-space-1.gitee.io/minecraftserver/1.12.2/1.12.2server.jar" download="1.12.2server.jar"
-						 class="mdui-list-item mdui-ripple">1.12.2 原版服务端</a>
-						<a href="https://storage-space-1.gitee.io/minecraftserver/1.12.2/1.12.2spigot.jar" download="1.12.2spigot.jar"
-						 class="mdui-list-item mdui-ripple">1.12.2 Spigot 插件服务端</a>
-						<a href="https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.12.2.jar" download="1.12.2craftbukkit.jar" class="mdui-list-item mdui-ripple">1.12.2
-							CraftBukkit 插件服务端(官方)</a>
-					</ul>
-				</li>
-
-				<li class="mdui-list-item mdui-ripple">
+	<!--列表-->
+	<div class="dw mdui-theme-layout-auto mdui-shadow-24">
+		<ul class="mdui-list" mdui-collapse="{accordion: true}">
+			<li class="mdui-collapse-item">
+				<div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
 					<i class="mdui-icon material-icons">file_download</i>
-					<a href="./all.html?dw=lanzou" class="mdui-list-item-content">下载其他版本</a>
-				</li>
-				
-				<li class="mdui-list-item mdui-ripple mdui-text-color-red">
-					<i class="mdui-icon material-icons">error_outline</i>
-					<a href="https://www.mcbbs.net/thread-1283097-1-1.html" target=_blank class="mdui-list-item-content">Log4j 0day CVE 漏洞警示及修复指南</a>
-				</li>
+					<div class="mdui-list-item-content">下载 1.16.3 服务器</div>
+					<i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+				</div>
+				<ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+					<a href="https://storage-space-1.gitee.io/minecraftserver/1.16.3/1.16.3server.jar"
+						download="1.16.3server.jar" class="mdui-list-item mdui-ripple" id="dwan">1.16.3 原版服务端</a>
+					<a href="https://storage-space-1.gitee.io/minecraftserver/1.16.3/1.16.3paper.jar"
+						download="1.16.3paper.jar" class="mdui-list-item mdui-ripple">1.16.3 Paper 插件服务端</a>
+					<a href="https://storage-space-1.gitee.io/minecraftserver/1.16.3/1.16.3spigot.jar"
+						download="1.16.3spigot.jar" class="mdui-list-item mdui-ripple">1.16.3 Spigot 插件服务端</a>
+					<a href="https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.16.3.jar"
+						download="1.16.3craftbukkit.jar" class="mdui-list-item mdui-ripple">1.16.3
+						CraftBukkit 插件服务端(官方)</a>
+				</ul>
+			</li>
 
-				<li class="mdui-list-item mdui-ripple">
-					<i class="mdui-icon material-icons">info</i>
-					<a href="./eula/" class="mdui-list-item-content">使用协议</a>
-				</li>
+			<li class="mdui-collapse-item">
+				<div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+					<i class="mdui-icon material-icons">file_download</i>
+					<div class="mdui-list-item-content">下载 1.15.2 服务器</div>
+					<i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+				</div>
+				<ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+					<a href="https://storage-space-1.gitee.io/minecraftserver/1.15.2/1.15.2server.jar"
+						download="1.15.2server.jar" class="mdui-list-item mdui-ripple">1.15.2 原版服务端</a>
+					<a href="https://storage-space-1.gitee.io/minecraftserver/1.15.2/1.15.2paper.jar"
+						download="1.15.2paper.jar" class="mdui-list-item mdui-ripple">1.15.2 Paper 插件服务端</a>
+					<a href="https://storage-space-1.gitee.io/minecraftserver/1.15.2/1.15.2spigot.jar"
+						download="1.15.2spigot.jar" class="mdui-list-item mdui-ripple">1.15.2 Spigot 插件服务端</a>
+					<a href="https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.15.2.jar"
+						download="1.15.2craftbukkit.jar" class="mdui-list-item mdui-ripple">1.15.2
+						CraftBukkit 插件服务端(官方)</a>
+				</ul>
+			</li>
 
-				<li class="mdui-list-item mdui-ripple">
-					<i class="mdui-icon material-icons">cloud</i>
-					<a href="https://www.natfrp.com/" target=_blank class="mdui-list-item-content">SAKURA FRP 免费内网穿透服务平台</a>
-				</li>
+			<li class="mdui-collapse-item">
+				<div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+					<i class="mdui-icon material-icons">file_download</i>
+					<div class="mdui-list-item-content">下载 1.12.2 服务器</div>
+					<i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+				</div>
+				<ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+					<a href="https://storage-space-1.gitee.io/minecraftserver/1.12.2/1.12.2server.jar"
+						download="1.12.2server.jar" class="mdui-list-item mdui-ripple">1.12.2 原版服务端</a>
+					<a href="https://storage-space-1.gitee.io/minecraftserver/1.12.2/1.12.2spigot.jar"
+						download="1.12.2spigot.jar" class="mdui-list-item mdui-ripple">1.12.2 Spigot 插件服务端</a>
+					<a href="https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.12.2.jar"
+						download="1.12.2craftbukkit.jar" class="mdui-list-item mdui-ripple">1.12.2
+						CraftBukkit 插件服务端(官方)</a>
+				</ul>
+			</li>
 
-			</ul>
+			<li class="mdui-list-item mdui-ripple">
+				<i class="mdui-icon material-icons">file_download</i>
+				<a href="./all.html?dw=lanzou" class="mdui-list-item-content">下载其他版本</a>
+			</li>
 
-		</div>
+			<li class="mdui-list-item mdui-ripple mdui-text-color-red">
+				<i class="mdui-icon material-icons">error_outline</i>
+				<a href="https://www.mcbbs.net/thread-1283097-1-1.html" target=_blank
+					class="mdui-list-item-content">Log4j 0day CVE 漏洞警示及修复指南</a>
+			</li>
 
-		<!--分隔-->
-		<div class="dw-upper"></div>
+			<li class="mdui-list-item mdui-ripple">
+				<i class="mdui-icon material-icons">info</i>
+				<a href="./eula/" class="mdui-list-item-content">使用协议</a>
+			</li>
 
-		<!--底部信息-->
-		<script>
-			var _hmt = _hmt || [];
-			(function() {
-				var hm = document.createElement("script");
-				hm.src = "https://hm.baidu.com/hm.js?a9e7a725065e705d5e8e91458f5d495f";
-				var s = document.getElementsByTagName("script")[0];
-				s.parentNode.insertBefore(hm, s);
-			})();
-		</script>
-		<p style="width: 100%;text-align: center;font-size: 15px;color:#C0C0C0;">Service provided by DDoS_LING</p>
-		<p style="width: 100%;text-align: center;font-size: 15px;color:#C0C0C0;">Last update: April 18, 2022</p>
+			<li class="mdui-list-item mdui-ripple">
+				<i class="mdui-icon material-icons">cloud</i>
+				<a href="https://www.natfrp.com/" target=_blank class="mdui-list-item-content">SAKURA FRP 免费内网穿透服务平台</a>
+			</li>
 
-	</body>
+		</ul>
+
+	</div>
+
+	<!--分隔-->
+	<div class="dw-upper"></div>
+
+	<!--底部信息-->
+	<div id="about"></div>
+	<script>$("#about").load("/about.html");</script>
+</body>
+
 </html>

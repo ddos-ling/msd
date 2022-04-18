@@ -53,7 +53,8 @@
 		<ul class="mdui-list" mdui-collapse="{accordion: true}">
 			<li class="mdui-list-item mdui-ripple mdui-text-color-red">
 				<i class="mdui-icon material-icons">error_outline</i>
-				<a href="https://www.mcbbs.net/thread-1283097-1-1.html" target=_blank class="mdui-list-item-content">Log4j 0day CVE 漏洞警示及修复指南</a>
+				<a href="https://www.mcbbs.net/thread-1283097-1-1.html" target=_blank
+					class="mdui-list-item-content">Log4j 0day CVE 漏洞警示及修复指南</a>
 			</li>
 			<li class="mdui-collapse-item">
 				<div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
@@ -72,6 +73,8 @@
 					<i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
 				</div>
 				<ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+					<a href="https://papermc.io/downloads" target=_blank class="mdui-list-item mdui-ripple">Paper 1.18.2 最新构建下载</a>
+					<a class="mdui-list-item mdui-ripple" mdui-dialog="{target: '#paper-w'}">-- 点击列出Paper旧版本 --</a>
 					<div id="paper"></div>
 				</ul>
 
@@ -114,10 +117,32 @@
 	<div class="dw-upper"></div>
 
 	<!--底部信息-->
-	<p style="width: 100%;text-align: center;font-size: 15px;color:#C0C0C0;">Service provided by DDoS_LING</p>
+	<div id="about"></div>
+	<script>$("#about").load("/about.html");</script>
 
 	<!-- 引入Download JavaScript -->
 	<script src="./js/download.js"></script>
+
+	<!-- Paper 旧版本警告 -->
+	<div class="mdui-dialog" id="paper-w" >
+		<div class="mdui-dialog-title">Legacy Downloads (旧版下载)</div>
+		<div class="mdui-dialog-content" style="text-align: left">
+			These are here purely for informational reasons.<br>
+			<i class="mdui-icon material-icons">error</i>You will receive no support for these builds.<br>
+			<i class="mdui-icon material-icons">error</i>Any issues you report for these builds will be closed.<br>
+			<i class="mdui-icon material-icons">error</i>You may be kicked when asking for support on our Discord.<br>
+			<br>
+			以下内容为使用 deepl 翻译为中文：<br>
+			这些在这里纯粹是为了提供信息的原因<br>
+			<i class="mdui-icon material-icons">error</i>你不会得到对这些构建的支持<br>
+			<i class="mdui-icon material-icons">error</i>你报告的关于这些构建的任何问题都将被关闭<br>
+			<i class="mdui-icon material-icons">error</i>当你在我们的 Discord 上请求支持时，你可能会被踢出<br>
+		</div>
+		<div class="mdui-dialog-actions">
+			<button class="mdui-btn mdui-ripple" mdui-dialog-close>取消</button>
+			<button class="mdui-btn mdui-ripple" mdui-dialog-confirm onclick='$("#paper").load("./"+dw_service+"/paper.html")'>我已了解，并继续下载</button>
+		</div>
+	</div>
 </body>
 
 </html>

@@ -9,4 +9,3 @@ var dw_service=GetQueryString("dw");
 $("#vanilla").load("./"+dw_service+"/vanilla.html");
 $("#craftbukkit").load("./"+dw_service+"/craftbukkit.html");
 $("#spigot").load("./"+dw_service+"/spigot.html");
-$("#paper").load("./"+dw_service+"/paper.html");
