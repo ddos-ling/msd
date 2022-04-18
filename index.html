@@ -108,7 +108,7 @@
 
 			<li class="mdui-list-item mdui-ripple">
 				<i class="mdui-icon material-icons">file_download</i>
-				<a href="./all.html?dw=lanzou" class="mdui-list-item-content">下载其他版本</a>
+				<a mdui-dialog="{target: '#dw-cloud'}" class="mdui-list-item-content">下载其他版本</a>
 			</li>
 
 			<li class="mdui-list-item mdui-ripple mdui-text-color-red">
@@ -130,6 +130,36 @@
 		</ul>
 
 	</div>
+
+	<div class="mdui-dialog" id="dw-cloud">
+		<div class="mdui-dialog-title">您想用哪家的存储？</div>
+		<div class="mdui-dialog-content">以下三家均为不限速下载，可以根据自己的喜好选择</div>
+		<div class="mdui-dialog-actions">
+			<button class="mdui-btn mdui-ripple" onclick="window.location.href = './all.html?dw=lanzou'"
+				mdui-dialog-confirm>蓝奏云</button>
+			<button class="mdui-btn mdui-ripple" onclick="window.location.href = './all.html?dw=123pan'"
+				mdui-dialog-confirm>123云盘</button>
+			<button class="mdui-btn mdui-ripple" onclick="window.location.href = './all.html?dw=aliyun'"
+				mdui-dialog-confirm>阿里云盘</button>
+		</div>
+	</div>
+
+	<script>
+		function GetQueryString(name) {
+			var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+			var r = window.location.search.substr(1).match(reg);
+			if (r != null) return decodeURI(decodeURI(r[2])); return null;
+		};
+
+		var dw_service = GetQueryString("dw");
+		var dw_cloud = new mdui.Dialog('#dw-cloud');
+
+		if (dw_service == "noset") {
+			dw_cloud.open();
+		}else if (dw_service != null && dw_service != "") {
+			window.location.href = "./all.html?dw=" + dw_service;
+		}
+	</script>
 
 	<!--分隔-->
 	<div class="dw-upper"></div>

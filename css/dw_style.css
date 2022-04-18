@@ -1,4 +1,4 @@
-/*全局样式*/
+/* 全局样式 */
 body {
 	background: url("../picture/background.png") center no-repeat fixed;
 	-webkit-background-size: cover;
@@ -8,7 +8,7 @@ body {
 	text-align: center
 }
 
-/*下载列表框样式*/
+/* 下载列表框样式 */
 .dw {
 	margin: 0 auto;
 	width: 400px;
@@ -21,7 +21,12 @@ body {
 	opacity: 0.8;
 }
 
-/*空白填充*/
+/* 空白填充 */
 .dw-upper {
 	height: 50px
+}
+
+/* 对话框文字居左 */
+.mdui-dialog {
+	text-align: left
 }
