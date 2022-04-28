@@ -52,7 +52,7 @@ if (dw_service == null || dw_service == "") {
 
 display();
 
-window.onload = function () {
+$(document).ready(function(){
     if (add_id()) {
         console.log("检测是否有直接下载的文件");
         if (dw_file != null && dw_file != "" && dw_service != "" && dw_service != null) {
@@ -66,4 +66,4 @@ window.onload = function () {
             console.log("没有下载跳转");
         }
     }
-}
+});
